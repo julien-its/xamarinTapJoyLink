@@ -18,7 +18,6 @@
   <!--  <attr path="/api/package[@name='Com.Tapjoy']/class[@name='VideoErrorEventArgs']" name="visibility">private</attr>
   <attr path="/api/package[@name='com.Tapjoy']/class[@name='VideoErrorEventArgs']" name="managedName">NewManagedName</attr>-->
   
-  <remove-node path="/api/package[@name='com.Tapjoy.VideoErrorEventArgs']" />
-  <remove-node path="/api/package[@name='com.Tapjoy']/class[@name='VideoErrorEventArgs']" />
-  <remove-node path="/api/package[@name='com.Tapjoy']/class[@name='ITJVideoListenerImplementor']" />
+  
+  <remove-node path="/api/package[@name='com.tapjoy']/interface[@name='TJVideoListener']/method[@name='onVideoError' and count(parameter)=1 and parameter[1][@type='int']]" />
 </metadata>
