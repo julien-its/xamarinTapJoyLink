@@ -19,5 +19,6 @@
   <attr path="/api/package[@name='com.Tapjoy']/class[@name='VideoErrorEventArgs']" name="managedName">NewManagedName</attr>-->
   
   
-  <remove-node path="/api/package[@name='com.tapjoy']/interface[@name='TJVideoListener']/method[@name='onVideoError' and count(parameter)=1 and parameter[1][@type='int']]" />
+   <!-- <remove-node path="/api/package[@name='com.tapjoy']/interface[@name='TJVideoListener']/method[@name='onVideoError' and count(parameter)=1 and parameter[1][@type='int']]" /> -->
+   <attr path="/api/package[@name='com.tapjoy']/interface[@name='TJVideoListener']/method[@name='onVideoError']/parameter[@name='p0']" name="name">args</attr>
 </metadata>
